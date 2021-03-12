@@ -10,3 +10,21 @@
 */
 
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
+
+let display = (data) => {
+    pTag = document.querySelector('p');
+    pTag.innerText = data;
+    pTag.style = 'color: red;';
+}
+
+
+function setVar() {
+    let store = document.getElementById('store').value
+    let prod = document.getElementById('product').value
+    let qty = document.getElementById('quantity').value
+    
+    let sentence = `I shopped at ${store} for *${qty}* *${prod}*`;
+    
+    display(sentence);
+    console.log(sentence);
+}
